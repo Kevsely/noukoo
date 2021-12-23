@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/* Carousel */
+#carousel {
+    height: 80vh;
+    width: 100%;
+}
+
+#carousel div {
+    height: 100%;
+    width: 100%;
+}
