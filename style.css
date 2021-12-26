@@ -20,7 +20,7 @@ Navbar
     padding: 0;
 }
 
-#navbarNoukoo, .navbar-nav {
+#noukooNavbar, .navbar-nav {
     height: 93px;
 }
 
@@ -48,7 +48,16 @@ Navbar
     padding: 30px 30px!important;
 }
 
+/* Carousel */
+#noukooCarousel, .carousel-item {
+    height: 88vh;
+}
 
+#noukooCarousel img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
 /* 
 ***************************************************
