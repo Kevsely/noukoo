@@ -7,13 +7,43 @@ body {
     width: 100%;
 }
 
-/* Carousel */
-#carousel {
-    height: 80vh;
-    width: 100%;
+/* 
+***************************************************
+***************************************************
+Navbar
+***************************************************
+***************************************************
+ */
+
+/* Centering inner elements */
+.navbar {
+    padding: 0;
 }
 
-#carousel div {
-    height: 100%;
-    width: 100%;
+#navbarNoukoo, .navbar-nav {
+    height: 93px;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.nav-item, .nav-link {
+    transition-duration: 250ms;
+    transition-property: border-bottom, color;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-item.active {
+    border-bottom: 2px solid white;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.nav-link {
+    /* padding: 0!important; */
+    padding: 30px 30px!important;
 }
