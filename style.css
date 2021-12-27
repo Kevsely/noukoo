@@ -4,7 +4,6 @@ html {
 
 body {
     margin: 0;
-    width: 100%;
 }
 
 /* 
@@ -48,15 +47,85 @@ Navbar
     padding: 30px 30px!important;
 }
 
-/* Carousel */
+/* 
+***************************************************
+***************************************************
+Carousel
+***************************************************
+***************************************************
+*/
 #noukooCarousel, .carousel-item {
-    height: 88vh;
+    height: 100vh;
 }
 
 #noukooCarousel img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+/* Text inside the carousel */
+/**
+ * ----------------------------------------
+ * animation scale-in-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+
+.carousel-legend {
+    position: absolute;
+    top: 7rem;
+    left: 12rem;
+
+    width: 50%;
+
+    color: white;
+    font-family: Sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: .99em;
+    letter-spacing: -.8px;
+}
+
+.carousel-legend span {
+    color: gray;
+}
+
+.scale-in-top {
+	-webkit-animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* 
@@ -75,14 +144,26 @@ Telephone
 ***************************************************
  */
 
-/* 
-***************************************************
-***************************************************
-Navbar
-***************************************************
-***************************************************
-*/
-
-#navbarNoukoo, .navbar-nav {
-    height: auto;
+ @media screen and (max-width:600px) {
+     /* 
+     ***************************************************
+     ***************************************************
+     Navbar
+     ***************************************************
+     ***************************************************
+     */     
+     #noukooNavbar, .navbar-nav {
+         height: auto;
+     }
+     
+     /* 
+     ***************************************************
+     ***************************************************
+     Carousel
+     ***************************************************
+     ***************************************************
+     */
+     #noukooCarousel, .carousel-item {
+         height: 90vh;
+     } 
 }
