@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    width: 100%;
     color: rgb(207, 204, 204);
     background-color: rgb(20, 20, 20);
 }
@@ -56,7 +57,7 @@ Carousel
 ***************************************************
 ***************************************************
 */
-#noukooCarousel, .carousel-item {
+#noukooCarousel, #noukooCarousel .carousel-item {
     height: 100vh;
 }
 
@@ -177,12 +178,19 @@ IMMO / COMMERCE
 ***************************************************
 ***************************************************
 */
-#galleryCarousel {
+
+#galleryCarousel, #galleryCarousel .carousel-item {
     height: 50vh;
 }
 
-#galleryCarousel img{
-    /* object-fit: cover; */
+#galleryCarousel img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#galleryCarousel button {
+    width: 30px;
 }
 
 /* 
@@ -220,7 +228,7 @@ Telephone
      ***************************************************
      ***************************************************
      */
-     #noukooCarousel, .carousel-item {
+     #noukooCarousel, #noukooCarousel .carousel-item {
          height: 90vh;
      } 
 
