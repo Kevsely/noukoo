@@ -166,4 +166,17 @@ Telephone
      #noukooCarousel, .carousel-item {
          height: 90vh;
      } 
+
+     .carousel-legend {
+        top: 8rem;
+        left: 5rem;
+    
+        width: 50%;
+    
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: .99em;
+        letter-spacing: -.8px;
+    }
 }
