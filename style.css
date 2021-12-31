@@ -1,4 +1,9 @@
-/* Color palette */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&family=Bebas+Neue&family=Exo:wght@600&display=swap');
+/* 
+font-family: 'Barlow', sans-serif; ----> General text
+font-family: 'Bebas Neue', cursive; ----> Titles
+font-family: 'Exo', sans-serif; -----> Slider
+*/
 
 html {
     box-sizing: border-box;
@@ -7,8 +12,13 @@ html {
 body {
     margin: 0;
     width: 100%;
-    color: rgb(207, 204, 204);
-    background-color: rgb(20, 20, 20);
+
+    color: rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0);
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 /* 
@@ -22,6 +32,7 @@ Navbar
 /* Centering inner elements */
 .navbar {
     padding: 0;
+    font-size: 1.3rem;
 }
 
 #noukooNavbar, .navbar-nav {
@@ -32,24 +43,27 @@ Navbar
     margin: auto;
 }
 
-.nav-item, .nav-link {
-    transition-duration: 250ms;
-    transition-property: border-bottom, color;
-    transition-timing-function: ease-in-out;
+.nav-link {
+    color: rgb(160, 160, 160)!important;
+    margin: 30px 30px!important;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: rgb(240, 240, 240)!important;
 }
 
 .nav-item.active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(240, 240, 240);
 }
 
 .nav-item:hover {
     cursor: pointer;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(240, 240, 240);
 }
 
-.nav-link {
-    /* padding: 0!important; */
-    padding: 30px 30px!important;
+.nav-link, .nav-item {
+    transition-property: border, color;
+    transition: 400ms ease-in-out;
 }
 
 /* 
