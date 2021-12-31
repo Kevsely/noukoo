@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&family=Bebas+Neue&family=Exo:wght@600&display=swap');
+
 /* 
 font-family: 'Barlow', sans-serif; ----> General text
 font-family: 'Bebas Neue', cursive; ----> Titles
@@ -12,14 +13,13 @@ html {
 body {
     margin: 0;
     width: 100%;
-
     color: rgb(240, 240, 240);
     background-color: rgb(0, 0, 0);
-
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
     font-weight: 300;
 }
+
 
 /* 
 ***************************************************
@@ -29,13 +29,16 @@ Navbar
 ***************************************************
 */
 
+
 /* Centering inner elements */
+
 .navbar {
     padding: 0;
     font-size: 1.3rem;
 }
 
-#noukooNavbar, .navbar-nav {
+#noukooNavbar,
+.navbar-nav {
     height: 93px;
 }
 
@@ -48,7 +51,8 @@ Navbar
     margin: 30px 30px!important;
 }
 
-.nav-link.active, .nav-link:hover {
+.nav-link.active,
+.nav-link:hover {
     color: rgb(240, 240, 240)!important;
 }
 
@@ -61,10 +65,12 @@ Navbar
     border-bottom: 2px solid rgb(240, 240, 240);
 }
 
-.nav-link, .nav-item {
+.nav-link,
+.nav-item {
     transition-property: border, color;
     transition: 400ms ease-in-out;
 }
+
 
 /* 
 ***************************************************
@@ -73,7 +79,9 @@ Carousel
 ***************************************************
 ***************************************************
 */
-#noukooCarousel, #noukooCarousel .carousel-item {
+
+#noukooCarousel,
+#noukooCarousel .carousel-item {
     height: 100vh;
 }
 
@@ -83,69 +91,77 @@ Carousel
     width: 100%;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+
 /* Text inside the carousel */
+
+
 /**
  * ----------------------------------------
  * animation scale-in-top
  * ----------------------------------------
  */
- @-webkit-keyframes scale-in-top {
+
+@-webkit-keyframes scale-in-top {
     0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      opacity: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
     }
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
     }
-  }
-  @keyframes scale-in-top {
+}
+
+@keyframes scale-in-top {
     0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      opacity: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
     }
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
     }
-  }
+}
 
 .carousel-legend {
     position: absolute;
-    top: 7rem;
+    top: 11rem;
     left: 12rem;
-
-    width: 50%;
-
-    color: white;
-    font-family: Sans-serif;
-    font-size: 80px;
-    font-weight: 700;
+    width: 60%;
+    font-family: 'Exo', sans-serif;
+    font-size: 70px;
+    /* font-weight: 700; */
     text-transform: uppercase;
     line-height: .99em;
     letter-spacing: -.8px;
 }
 
 .carousel-legend span {
-    color: gray;
+    color: #626369;
 }
 
 .scale-in-top {
-	-webkit-animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 
 /* 
 ***************************************************
@@ -154,6 +170,7 @@ IMMO / COMMERCE
 ***************************************************
 ***************************************************
 */
+
 #immo-commerce {
     margin: 4rem 0;
     display: flex;
@@ -164,28 +181,23 @@ IMMO / COMMERCE
 #immo-commerce .category {
     border: 2px solid #27a5a5;
     border-radius: 2rem;
-
     padding: 10rem 8rem;
-
     font-family: sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     /* letter-spacing: 8px;  */
-
     transition: all 2s;
 }
 
 #immo-commerce .category:hover {
     cursor: pointer;
-
     border-color: #153d8a;
-
     padding: 11rem 9rem;
-
     /* font-size: 3.5rem;
     font-weight: 700; */
 }
+
 
 /* 
 ***************************************************
@@ -195,7 +207,8 @@ IMMO / COMMERCE
 ***************************************************
 */
 
-#galleryCarousel, #galleryCarousel .carousel-item {
+#galleryCarousel,
+#galleryCarousel .carousel-item {
     height: 50vh;
 }
 
@@ -208,6 +221,7 @@ IMMO / COMMERCE
 #galleryCarousel button {
     width: 30px;
 }
+
 
 /* 
 ***************************************************
@@ -225,35 +239,44 @@ Telephone
 ***************************************************
  */
 
- @media screen and (max-width:600px) {
-     /* 
+@media screen and (max-width:600px) {
+    /* 
      ***************************************************
      ***************************************************
      Navbar
      ***************************************************
      ***************************************************
-     */     
-     #noukooNavbar, .navbar-nav {
-         height: auto;
-     }
-     
-     /* 
+     */
+    #noukooNavbar,
+    .navbar-nav {
+        height: auto;
+    }
+    /* 
      ***************************************************
      ***************************************************
      Carousel
      ***************************************************
      ***************************************************
      */
-     #noukooCarousel, #noukooCarousel .carousel-item {
-         height: 90vh;
-     } 
-
-     .carousel-legend {
+    #noukooCarousel,
+    #noukooCarousel .carousel-item {
+        height: 50vh;
+    }
+    .carousel-legend {
         top: 8rem;
-        left: 5rem;
-    
-        width: 50%;
-    
-        font-size: 40px;
+        left: 3rem;
+        /* width: 50%; */
+        font-size: 20px;
+    }
+    /* 
+      ***************************************************
+      ***************************************************
+      IMMO / COMMERCE
+      ***************************************************
+      ***************************************************
+      */
+    #immo-commerce .category {
+        padding: 2rem 1rem;
+        font-size: 1rem;
     }
 }
