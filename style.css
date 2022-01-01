@@ -300,8 +300,9 @@ IMMO / COMMERCE
 */
 
 #galleryCarousel,
-#galleryCarousel .carousel-item {
-    height: 50vh;
+#galleryCarousel .carousel-item,
+#galleryCarousel .carousel-item .row {
+    height: 30vh;
 }
 
 #galleryCarousel img {
@@ -375,17 +376,31 @@ Telephone
         font-size: 20px;
     }
     /* 
-      ***************************************************
-      ***************************************************
-      IMMO / COMMERCE
-      ***************************************************
-      ***************************************************
-      */
+    ***************************************************
+    ***************************************************
+    IMMO / COMMERCE
+    ***************************************************
+    ***************************************************
+    */
     #immo-commerce .category {
         padding: 2rem 1rem;
         font-size: 1rem;
         border-radius: 1rem;
         width: 40vw;
         text-align: center;
+    }
+
+    /* 
+    ***************************************************
+    ***************************************************
+    360 Gallery
+    ***************************************************
+    ***************************************************
+    */
+
+    #galleryCarousel,
+    #galleryCarousel .carousel-item,
+    #galleryCarousel .carousel-item .row {
+        height: 15vh;
     }
 }
