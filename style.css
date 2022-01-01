@@ -337,6 +337,7 @@ Specialities
 ***************************************************
 */
 #specialities-container {
+    margin: 2rem auto;
     display: flex;
     justify-content: space-around;
 }
