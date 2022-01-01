@@ -21,7 +21,7 @@ body {
 }
 
 section {
-    margin: 4rem 5rem;
+    margin: 2rem 5rem;
 }
 
 section div.title {
@@ -332,6 +332,20 @@ Telephone
  */
 
 @media screen and (max-width:600px) {
+    section {
+        margin: 1rem auto;
+    }
+    
+    section div.title {
+        margin: 2rem 1rem;    
+        font-size: 0.5rem;
+    }
+    
+    section div.title .line {
+        width: 6rem;
+        border: solid 2px #27a5a5;
+    }
+
     /* 
      ***************************************************
      ***************************************************
@@ -370,5 +384,8 @@ Telephone
     #immo-commerce .category {
         padding: 2rem 1rem;
         font-size: 1rem;
+        border-radius: 1rem;
+        width: 40vw;
+        text-align: center;
     }
 }
