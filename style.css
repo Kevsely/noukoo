@@ -336,26 +336,39 @@ Specialities
 ***************************************************
 ***************************************************
 */
-#specialities-container {
+#specialities-container, #how-it-works-container{
     margin: 2rem auto;
     display: flex;
     justify-content: space-around;
 }
 
-.speciality-item {
-    position: relative;
+.speciality-item, .how-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#specialities-container .speciality-legend {
+#specialities-container .speciality-legend, .how-title {
     margin-top: 0.5rem;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
+}
+
+/* 
+***************************************************
+***************************************************
+How it works
+***************************************************
+***************************************************
+*/
+
+/* See previous section */
+
+.how-description {
+    font-size: 1.2rem;
 }
 
 /* 
@@ -465,11 +478,15 @@ Telephone
     ***************************************************
     ***************************************************
     */
-    #specialities-container {
+    #specialities-container, #how-it-works-container {
         flex-direction: column;
     }
 
-    .speciality-item {
+    .speciality-item, .how-item {
         margin: 1rem auto;
+    }
+
+    .how-description {
+        margin: auto 1rem;
     }
 }
