@@ -342,6 +342,22 @@ Specialities
     justify-content: space-around;
 }
 
+.speciality-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#specialities-container .speciality-legend {
+    margin-top: 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 /* 
 ***************************************************
 ***************************************************
@@ -440,5 +456,20 @@ Telephone
     #why .text {
         margin: 2rem 1rem;
         font-size: 1rem;
+    }
+
+    /* 
+    ***************************************************
+    ***************************************************
+    Specialities
+    ***************************************************
+    ***************************************************
+    */
+    #specialities-container {
+        flex-direction: column;
+    }
+
+    .speciality-item {
+        margin: 1rem auto;
     }
 }
