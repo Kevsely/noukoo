@@ -387,7 +387,7 @@ Telephone
 ***************************************************
  */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
     section {
         margin: 1rem auto;
     }
