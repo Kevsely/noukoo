@@ -26,7 +26,7 @@ section {
 
 section div.title {
     align-self: flex-start;
-    margin: 2rem 0rem;
+    margin: 6rem 0rem 2rem 0;
 
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
@@ -325,7 +325,7 @@ Why
 
 #why .text {
     margin: 2rem 15rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: justify;
 }
 
