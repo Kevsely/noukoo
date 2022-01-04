@@ -218,6 +218,11 @@ IMMO / COMMERCE
     transition: all 2s;
 }
 
+#immo-commerce .category a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /**
  * ----------------------------------------
