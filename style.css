@@ -628,9 +628,12 @@ Telephone
     ***************************************************
     ***************************************************
     */
-    #galleryCarousel,
+    /* #galleryCarousel,
     #galleryCarousel .carousel-item,
     #galleryCarousel .carousel-item .row {
+        height: 50vh;
+    } */
+    #gallery-360 iframe {
         height: 50vh;
     }
 
