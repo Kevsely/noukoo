@@ -307,7 +307,12 @@ IMMO / COMMERCE
 #galleryCarousel,
 #galleryCarousel .carousel-item,
 #galleryCarousel .carousel-item .row {
-    height: 30vh;
+    height: 100vh;
+}
+
+.carousel-item iframe.ku-embed {
+    height: 100%;
+    width: 100%;
 }
 
 #galleryCarousel img {
