@@ -307,7 +307,7 @@ IMMO / COMMERCE
 #galleryCarousel,
 #galleryCarousel .carousel-item,
 #galleryCarousel .carousel-item .row {
-    height: 100vh;
+    height: 80vh;
 }
 
 .carousel-item iframe.ku-embed {
@@ -626,7 +626,7 @@ Telephone
     #galleryCarousel,
     #galleryCarousel .carousel-item,
     #galleryCarousel .carousel-item .row {
-        height: 15vh;
+        height: 50vh;
     }
 
     /* 
