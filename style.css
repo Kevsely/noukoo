@@ -320,6 +320,7 @@ IMMO / COMMERCE
     top: 0;
     left: 0;
     right: 0;
+
     height: 2rem;
 
     background-color: black;
@@ -623,8 +624,12 @@ Telephone
     ***************************************************
     ***************************************************
     */
-    #gallery-360 iframe {
+    #gallery-360 #gallery-wrapper {
         height: 50vh;
+    }
+
+    #gallery-360 div {
+        top: -2px;
     }
 
     /* 
