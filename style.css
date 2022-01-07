@@ -303,31 +303,26 @@ IMMO / COMMERCE
 ***************************************************
 ***************************************************
 */
-
-/* #galleryCarousel,
-#galleryCarousel .carousel-item,
-#galleryCarousel .carousel-item .row {
+#gallery-360 #gallery-wrapper {
     height: 80vh;
+    width: 100%;
+
+    position: relative;
 }
 
-.carousel-item iframe.ku-embed {
+#gallery-wrapper iframe {
     height: 100%;
     width: 100%;
 }
 
-#galleryCarousel img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
+#gallery-wrapper div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
 
-#galleryCarousel button {
-    width: 30px;
-} */
-
-#gallery-360 iframe {
-    height: 80vh;
-    width: 100%;
+    background-color: black;
 }
 
 /* 
@@ -628,11 +623,6 @@ Telephone
     ***************************************************
     ***************************************************
     */
-    /* #galleryCarousel,
-    #galleryCarousel .carousel-item,
-    #galleryCarousel .carousel-item .row {
-        height: 50vh;
-    } */
     #gallery-360 iframe {
         height: 50vh;
     }
