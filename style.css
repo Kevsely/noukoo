@@ -36,7 +36,7 @@ section div.title {
 section div.title .line {
     margin-top: 0.5rem;
     width: 6rem;
-    border: solid 3px #27a5a5;
+    border-top: solid 4px #27a5a5;
 }
 
 /* 
