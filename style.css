@@ -622,6 +622,8 @@ Gallery
     height: 0;
     overflow: hidden;
 
+    text-align: center;
+
     transition: top 1s ease-in-out;
 }
 
@@ -630,19 +632,19 @@ Gallery
 
     height: 90%;
 
-    background-color: #00000071;
-    cursor: pointer;
+    background-color: #00000071;    
 }
 
 #gallery .see-more img {
-    position: relative;
-
     height: 25px;
     width: 25px;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 35%;
+}
+
+#gallery .see-more a {
+    color: white;
+    cursor: pointer;
 }
 
 /* 
