@@ -55,13 +55,13 @@ Navbar
 }
 
 .navbar-nav {
-    height: 93px;
+    height: 70px;
     margin: auto;
 }
 
 .nav-link {
     color: rgb(160, 160, 160)!important;
-    margin: 30px 30px!important;
+    margin: 10px!important;
 }
 
 .nav-link, .nav-item {
@@ -90,7 +90,7 @@ Carousel
 */
 #noukooCarousel,
 #noukooCarousel .carousel-item {
-    height: 100vh;
+    height: 90vh;
 }
 
 #noukooCarousel img {
@@ -176,6 +176,10 @@ IMMO / COMMERCE
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#immo-commerce div.title {
+    margin-top: 0;
 }
 
 #immo-commerce-container {
