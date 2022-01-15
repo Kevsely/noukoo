@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&family=Bebas+Neue&family=Exo:wght@600&display=swap');
-
 /* 
 font-family: 'Barlow', sans-serif; ----> General text
 font-family: 'Bebas Neue', cursive; ----> Titles
 font-family: 'Exo', sans-serif; -----> Slider
 */
 
+/* 
+***************************************************
+General
+***************************************************
+*/
 html {
     box-sizing: border-box;
 }
@@ -41,26 +45,17 @@ section div.title .line {
 
 /* 
 ***************************************************
-***************************************************
 Navbar
 ***************************************************
-***************************************************
 */
-
-
 /* Centering inner elements */
-
 .navbar {
     padding: 0;
     font-size: 1.3rem;
 }
 
-#noukooNavbar,
 .navbar-nav {
     height: 93px;
-}
-
-.navbar-nav {
     margin: auto;
 }
 
@@ -69,35 +64,30 @@ Navbar
     margin: 30px 30px!important;
 }
 
-.nav-link.active,
-.nav-link:hover {
-    color: rgb(240, 240, 240)!important;
-}
-
-.nav-item.active {
-    border-bottom: 2px solid rgb(240, 240, 240);
-}
-
-.nav-item:hover {
-    cursor: pointer;
-    border-bottom: 2px solid rgb(240, 240, 240);
-}
-
-.nav-link,
-.nav-item {
+.nav-link, .nav-item {
     transition-property: border, color;
     transition: 400ms ease-in-out;
 }
 
+.nav-item.active {
+    border-bottom: 2px solid rgb(240, 240, 240);
+}    
+
+.nav-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}    
+
+.nav-link.active,
+.nav-link:hover {
+    color: rgb(240, 240, 240)!important;
+}    
 
 /* 
 ***************************************************
-***************************************************
 Carousel
 ***************************************************
-***************************************************
 */
-
 #noukooCarousel,
 #noukooCarousel .carousel-item {
     height: 100vh;
@@ -116,7 +106,21 @@ Carousel
 
 
 /* Text inside the carousel */
+.carousel-legend {
+    position: absolute;
+    top: 13rem;
+    left: 12rem;
+    width: 40%;
+    font-family: 'Exo', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: .99em;
+    letter-spacing: -.8px;
+}
 
+.carousel-legend span {
+    color: #626369;
+}
 
 /**
  * ----------------------------------------
@@ -124,7 +128,7 @@ Carousel
  * ----------------------------------------
  */
 
-@-webkit-keyframes scale-in-top {
+ @-webkit-keyframes scale-in-top {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -158,46 +162,21 @@ Carousel
     }
 }
 
-.carousel-legend {
-    position: absolute;
-    top: 13rem;
-    left: 12rem;
-    width: 40%;
-    font-family: 'Exo', sans-serif;
-    font-size: 70px;
-    /* font-weight: 700; */
-    text-transform: uppercase;
-    line-height: .99em;
-    letter-spacing: -.8px;
-}
-
-.carousel-legend span {
-    color: #626369;
-}
-
 .scale-in-top {
     -webkit-animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
 /* 
-***************************************************
 ***************************************************
 IMMO / COMMERCE
 ***************************************************
-***************************************************
 */
-
 #immo-commerce {
-    /* margin: 2rem 0; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
 }
-
-
 
 #immo-commerce-container {
     width: 100%;
@@ -214,7 +193,6 @@ IMMO / COMMERCE
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    /* letter-spacing: 8px;  */
     transition: all 2s;
 }
 
@@ -223,14 +201,13 @@ IMMO / COMMERCE
     color: inherit;
 }
 
-
 /**
  * ----------------------------------------
  * animation shake-horizontal
  * ----------------------------------------
  */
 
-@-webkit-keyframes shake-horizontal {
+ @-webkit-keyframes shake-horizontal {
     0%,
     100% {
         -webkit-transform: translateX(0);
@@ -295,12 +272,9 @@ IMMO / COMMERCE
     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
-
 /* 
 ***************************************************
-***************************************************
 360 Gallery
-***************************************************
 ***************************************************
 */
 #gallery-360 #gallery-wrapper {
@@ -328,12 +302,9 @@ IMMO / COMMERCE
 
 /* 
 ***************************************************
-***************************************************
 Why
 ***************************************************
-***************************************************
 */
-
 #why .text {
     margin: 2rem 15rem;
     font-size: 1.8rem;
@@ -342,9 +313,7 @@ Why
 
 /* 
 ***************************************************
-***************************************************
 Specialities
-***************************************************
 ***************************************************
 */
 #specialities-container, #how-it-works-container{
@@ -370,9 +339,7 @@ Specialities
 
 /* 
 ***************************************************
-***************************************************
 How it works
-***************************************************
 ***************************************************
 */
 
@@ -385,284 +352,10 @@ How it works
 /* 
 ***************************************************
 ***************************************************
-Pricing
-***************************************************
-***************************************************
-*/
-
-#pricing {
-    margin-top: 4rem;
-}
-
-.pricing-subtitle {
-    text-align: center;
-}
-
-.pricing-table-title {
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 27px;
-    color: #fff;
-    padding-top: 50px; 
-}
-  
-.pricing-plans-tab {
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin-bottom: 38px; 
-}
-
-.pricing-plans-tab .list-group-item-action {
-    width: auto;
-    background-color: #393a3d;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px 20px; 
-}
-
-.pricing-plans-tab .list-group-item-action.active {
-    background: #000;
-    color: #fff;
-    border: none; 
-}
-  
-.pricing-tab-content {
-    padding-top: 35px;
-    padding-bottom: 35px; 
-}
-    
-.pricing-tab-content .tab-pane.active {
-    -webkit-animation: slide-down 0.6s ease-in-out;
-    animation: slide-down 0.6s ease-in-out; 
-}
-  
-@-webkit-keyframes slide-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(5%);
-        transform: translateY(5%); 
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0); 
-    } 
-}
-
-@keyframes slide-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(5%);
-        transform: translateY(5%);
-    }
-    
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0); 
-    }
-}
-  
-.pricing-card {
-    text-align: center;
-    border: none;
-    border-radius: 1rem;
-    margin-bottom: 28px;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
-    background-color: rgba(43, 43, 43, 0.582);
-}
-    
-.pricing-card .card-body {
-    padding: 60px 35px 45px; 
-}
-
-.pricing-card-highlighted {
-    border: 1px solid #27a5a5;
-    color: #fff;
-    z-index: 1; 
-}
-
-.pricing-card:hover {
-    color: #fff;
-    z-index: 1; 
-}
-
-@media (min-width: 768px) {
-    .pricing-card-highlighted, .pricing-card:hover {
-        margin: -32px -14px;
-        padding: 32px 14px; 
-    } 
-}
-
-.pricing-plan-title {
-    font-size: 18px;
-    color: inherit;
-    margin-bottom: 6px;
-    font-weight: normal; 
-}
-
-.pricing-plan-cost {
-    font-size: 40px;
-    color: #27a5a5;
-    font-weight: bold;
-    margin-bottom: 41px; 
-}
-
-.pricing-plan-cost .currency {
-    font-size: 17px; 
-}
-  
-.pricing-plan-features {
-    list-style: none;
-    padding-left: 0;
-    color: inherit;
-    font-size: 15px;
-    line-height: 1.67;
-    margin-bottom: 47px; 
-}
-  
-.start-my-project-btn     {
-    color: #27a5a5;
-    background-color: rgb(240, 240, 240);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 20px;
-    border-radius: 4px;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    position: relative; 
-}
-
-.start-my-project-btn:hover {
-    color: #fff;
-    background-color: #27a5a5;
-}
-
-.pricing-plan-features li {
-    display: block;
-    border-top: 1px solid #27a5a5;
-    padding: .5rem 0;
-}
-
-/* 
-***************************************************
-***************************************************
-Gallery
-***************************************************
-***************************************************
-*/
-#gallery {
-    margin: 1rem 20rem;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gallery .item-container {
-    position: relative;
-    overflow: hidden;
-
-    border-radius: 1rem;
-
-    width: 15vw;
-    height: 15vw;
-    margin: 1rem;
-}
-
-#gallery .item-container:hover {
-    border: solid 1px #27a5a5
-}
-
-#gallery .item-container > img {
-    object-fit: cover;
-    
-    height: 100%;
-    width: 100%;
-    
-    border-radius: 1rem;
-}
-
-#gallery .item-container:hover > img {
-    filter: blur(4px);
-    -webkit-filter: blur(4px);    
-}
-
-
-#gallery .item-container .legend {
-    position: absolute;
-    top: 90%;
-    
-    background-color: #27a5a5;
-    
-    width: 100%;
-    height: 2rem;
-
-    text-align: center;
-    font-weight: 700;
-
-    border-radius: 0 0 1rem 1rem;
-
-    transition: top 1s ease-in-out;
-}
-
-#gallery .item-container:hover .legend {
-    top: 0;
-
-    border-radius: 1rem 1rem 0 0;
-}
-
-#gallery .item-container .see-more {
-    position: absolute;
-    top: 100%;
-
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-
-    text-align: center;
-
-    transition: top 1s ease-in-out;
-}
-
-#gallery .item-container:hover .see-more {
-    top: 2rem;
-
-    height: 90%;
-
-    background-color: #00000071;    
-}
-
-#gallery .see-more img {
-    height: 25px;
-    width: 25px;
-
-    margin-top: 35%;
-}
-
-#gallery .see-more a {
-    color: white;
-    cursor: pointer;
-}
-
-/* 
-***************************************************
-***************************************************
-***************************************************
-***************************************************
-***************************************************
-***************************************************
 Telephone
 ***************************************************
 ***************************************************
-***************************************************
-***************************************************
-***************************************************
-***************************************************
- */
-
+*/
 @media screen and (max-width:768px) {
     section {
         margin: 1rem auto;
@@ -680,9 +373,7 @@ Telephone
 
     /* 
      ***************************************************
-     ***************************************************
      Navbar
-     ***************************************************
      ***************************************************
      */
     #noukooNavbar,
@@ -692,9 +383,7 @@ Telephone
 
     /* 
      ***************************************************
-     ***************************************************
      Carousel
-     ***************************************************
      ***************************************************
      */
     #noukooCarousel,
@@ -704,14 +393,12 @@ Telephone
     .carousel-legend {
         top: 8rem;
         left: 3rem;
-        /* width: 50%; */
         font-size: 20px;
     }
+
     /* 
     ***************************************************
-    ***************************************************
     IMMO / COMMERCE
-    ***************************************************
     ***************************************************
     */
     #immo-commerce .category {
@@ -724,9 +411,7 @@ Telephone
 
     /* 
     ***************************************************
-    ***************************************************
     360 Gallery
-    ***************************************************
     ***************************************************
     */
     #gallery-360 #gallery-wrapper {
@@ -740,9 +425,7 @@ Telephone
 
     /* 
     ***************************************************
-    ***************************************************
     Why
-    ***************************************************
     ***************************************************
     */
     #why .text {
@@ -752,14 +435,11 @@ Telephone
 
     /* 
     ***************************************************
-    ***************************************************
     Specialities
-    ***************************************************
     ***************************************************
     */
     #specialities-container, #how-it-works-container {
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
 
     .speciality-item, .how-item {
@@ -768,30 +448,5 @@ Telephone
 
     .how-description {
         margin: auto 1rem;
-    }
-
-    /* 
-    ***************************************************
-    ***************************************************
-    Gallery
-    ***************************************************
-    ***************************************************
-    */
-    #gallery {
-        margin: 1rem auto;
-        flex-direction: column;
-    }
-
-    #gallery .item-container {
-        width: 90vw;
-        height: 90vw;
-    }
-
-    #gallery .item-container .legend {
-        top: 92%;
-    }
-
-    #gallery .item-container:hover .see-more {
-        height: 92%;
     }
 }
