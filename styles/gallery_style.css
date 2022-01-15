@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&family=Bebas+Neue&family=Exo:wght@600&display=swap');
 
+/* 
+***************************************************
+General
+***************************************************
+*/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    color: rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 
 /* 
 ***************************************************
-***************************************************
 Gallery
-***************************************************
 ***************************************************
 */
 #gallery {
