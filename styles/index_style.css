@@ -88,9 +88,13 @@ Navbar
 Carousel
 ***************************************************
 */
+#noukooCarousel {
+    margin-top: 70px;
+}
+
 #noukooCarousel,
 #noukooCarousel .carousel-item {
-    height: 90vh;
+    height: 80vh;
 }
 
 #noukooCarousel img {
@@ -392,10 +396,11 @@ Telephone
      */
     #noukooCarousel,
     #noukooCarousel .carousel-item {
-        height: 50vh;
+        height: 32vh;
     }
+
     .carousel-legend {
-        top: 8rem;
+        top: 2rem;
         left: 3rem;
         font-size: 20px;
     }
